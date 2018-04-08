@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/heruijun/Desktop/ionicDemo/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/heruijun/Desktop/ionicPluginDemo/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/heruijun/Desktop/ionicDemo/platforms/android/app/src/main/res/values/strings.xml",
+                    "source": "/Users/heruijun/Desktop/ionicPluginDemo/platforms/android/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",
