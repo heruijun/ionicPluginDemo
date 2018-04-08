@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.hrj.demo"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.hrj.demo"
     }
   },
   "dependent_plugins": {}
