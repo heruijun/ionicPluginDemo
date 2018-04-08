@@ -26,4 +26,5 @@
     </platform>
     <engine name="android" spec="~7.0.0" />
     <plugin name="cordova-plugin-device" spec="^2.0.1" />
+    <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
 </widget>

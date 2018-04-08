@@ -41,7 +41,18 @@ var app = {
 
         console.log('Received Event: ' + id);
 
-        alert(device.uuid)
+        // alert(device.uuid)
+
+        function onConfirm(buttonIndex) {
+            alert('You selected button ' + buttonIndex);
+        }
+
+        navigator.notification.confirm(
+            'You are the winner!', // message
+             onConfirm,            // callback to invoke with index of button pressed
+            'Game Over',           // title
+            ['Restart','Exit']     // buttonLabels
+        );
     }
 };
 
