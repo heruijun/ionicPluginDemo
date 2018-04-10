@@ -1,6 +1,4 @@
-package com.hrj.demo.toast;
-
-import android.widget.Toast;
+package com.childfolio.amazon;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -12,11 +10,11 @@ import org.json.JSONObject;
 /**
  * This class echoes a string called from JavaScript.
  */
-public class MyToast extends CordovaPlugin {
+public class AmazonS3 extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        if (action.equals("echo")) {
+        if (action.equals("upload")) {
             String message = args.getString(0);
             this.coolMethod(message, callbackContext);
             return true;
@@ -26,15 +24,9 @@ public class MyToast extends CordovaPlugin {
 
     private void coolMethod(String message, CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
-            cordova.getActivity().runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    Toast.makeText(cordova.getContext(), message, Toast.LENGTH_LONG).show();
-                }
-            });
-            callbackContext.success(message);
+            callbackContext.success("amazon: " + message);
         } else {
-            callbackContext.error("参数错误.");
+            callbackContext.error("Expected one non-empty string argument.");
         }
     }
 }

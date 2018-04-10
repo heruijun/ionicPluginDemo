@@ -9,7 +9,6 @@
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
-    <plugin name="com.hrj.demo.toast" spec="MyToast" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -27,4 +26,5 @@
     <engine name="android" spec="~7.0.0" />
     <plugin name="cordova-plugin-device" spec="^2.0.1" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
+    <plugin name="com.hrj.demo.toast" spec="MyToast" />
 </widget>

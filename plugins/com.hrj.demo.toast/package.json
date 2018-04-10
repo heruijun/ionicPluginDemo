@@ -1,0 +1,17 @@
+{
+  "name": "MyToast",
+  "version": "1.0.2",
+  "description": "",
+  "cordova": {
+    "id": "com.hrj.demo.toast",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}

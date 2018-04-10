@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.childfolio.amazon"
+    version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>AmazonS3</name>
+    <js-module
+        name="AmazonS3"
+        src="www/AmazonS3.js">
+        <clobbers target="cordova.plugins.AmazonS3" />
+    </js-module>
+    <platform name="android">
+        <config-file
+            parent="/*"
+            target="res/xml/config.xml">
+            <feature name="AmazonS3">
+                <param
+                    name="android-package"
+                    value="com.childfolio.amazon.AmazonS3" />
+            </feature>
+        </config-file>
+        <config-file
+            parent="/*"
+            target="AndroidManifest.xml"></config-file>
+        <source-file
+            src="src/android/AmazonS3.java"
+            target-dir="src/com/childfolio/amazon" />
+    </platform>
+</plugin>

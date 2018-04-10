@@ -1,7 +1,5 @@
 package com.hrj.demo.toast;
 
-import android.widget.Toast;
-
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
 
@@ -26,12 +24,6 @@ public class MyToast extends CordovaPlugin {
 
     private void coolMethod(String message, CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
-            cordova.getActivity().runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    Toast.makeText(cordova.getContext(), message, Toast.LENGTH_LONG).show();
-                }
-            });
             callbackContext.success(message);
         } else {
             callbackContext.error("参数错误.");

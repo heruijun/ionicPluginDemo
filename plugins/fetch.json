@@ -22,5 +22,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "com.hrj.demo.toast": {
+    "source": {
+      "type": "local",
+      "path": "/Users/heruijun/Desktop/ionicPluginDemo/node_modules/MyToast"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

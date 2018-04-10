@@ -43,16 +43,25 @@ var app = {
 
         // alert(device.uuid)
 
-        function onConfirm(buttonIndex) {
-            alert('You selected button ' + buttonIndex);
-        }
+//        function onConfirm(buttonIndex) {
+//            alert('You selected button ' + buttonIndex);
+//        }
+//
+//        navigator.notification.confirm(
+//            'You are the winner!', // message
+//             onConfirm,            // callback to invoke with index of button pressed
+//            'Game Over',           // title
+//            ['Restart','Exit']     // buttonLabels
+//        );
 
-        navigator.notification.confirm(
-            'You are the winner!', // message
-             onConfirm,            // callback to invoke with index of button pressed
-            'Game Over',           // title
-            ['Restart','Exit']     // buttonLabels
-        );
+        function success(result){
+            // debugger;
+            alert("Jerry plugin result: " + result);
+        };
+        setTimeout( function(){
+            // debugger;
+            Cordova.exec(success, null, "MyToast", "echo", ['haha']);
+        }, 2000);     }
     }
 };
 
